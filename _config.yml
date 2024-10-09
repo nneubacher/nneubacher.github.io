@@ -22,24 +22,24 @@ timezone: Europe/Berlin
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
-title: Niklas Heidloff
+title: Nikolas Neubacher
 
-tagline: "<div>Welcome to my blog!</div><div style='padding-bottom: 10px;'></div><div>I'm an IT professional focussing on artificial intelligence, development and advocacy.</div><div style='padding-bottom: 10px;'></div><div>Recently I've worked on Generative AI, Kubernetes, Open Source, Java and DevOps at IBM.</div><div style='padding-bottom: 10px;'></div><div>I'm a proud father of five and love building things - software as well as outdoor areas.</div>"
+tagline: "<div>Welcome to my blog!</div><div style='padding-bottom: 10px;'></div><div>...</div>"
 
 description: >-   
-  Blog from Niklas Heidloff, an IT professional focussing on artificial intelligence, development and advocacy. Niklas works at IBM and shares his AI, Cloud, OpenSource and DevOps experience.
+  Blog from Nikolas Neubacher, coming soon...
 
 github:
-  username: nheidloff
+  username: nneubacher
 twitter:
-  username: nheidloff
+  username: ...
 social:
-  name: Niklas Heidloff
+  name: Nikolas Neubacher
   links:
     # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/niklasheidloff
-    - https://twitter.com/nheidloff      
-    - https://github.com/nheidloff        
+    - https://www.linkedin.com/...
+    - https://twitter.com/...      
+    - https://github.com/nneubacher      
 
 google_site_verification:               # fill in to your verification string
 # ↑ --------------------------
