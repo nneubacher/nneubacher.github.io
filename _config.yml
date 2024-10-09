@@ -8,8 +8,8 @@ theme: jekyll-theme-chirpy
 #baseurl: '/heidloffblog'
 baseurl: ''
 
-#url: 'https://nheidloff.github.io/heidloffblog'
-url: 'https://heidloff.net'
+url: 'https://nneubacher.github.io/'
+#url: 'https://heidloff.net'
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
