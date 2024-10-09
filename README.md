@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Blog from Niklas Heidloff - heidloff.net
 
 This repo contains the blog from [Niklas Heidloff](https://heidloff.net), both the blog application as well as the blog data.
@@ -78,3 +79,6 @@ npx gulp
 
 This work is published under Apache License v2.
 
+=======
+# nneubacher.github.io
+>>>>>>> new-origin/main
