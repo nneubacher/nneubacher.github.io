@@ -8,7 +8,7 @@ guid: 'nikolasneubacher.com/nn-1'
 permalink: /article/local-call-transcription-granite-speech-mlx/
 custom_permalink:
     - article/local-call-transcription-granite-speech-mlx/
-image: /assets/img/2026/05/asr-speech.png
+image:
 pin: false
 ---
 
