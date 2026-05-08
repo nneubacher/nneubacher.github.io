@@ -120,11 +120,24 @@ A few honest caveats: the VAD is energy-based, so a noisy environment will produ
 
 ## The Script
 
-<script src="https://gist.github.com/nneubacher/892e1805f283b244dd416c5114fd5d73.js"></script>
+<a href="https://gist.github.com/nneubacher/892e1805f283b244dd416c5114fd5d73/raw/transcribe.py" download="transcribe.py">⬇ Download transcribe.py</a>
+
+<details>
+<summary>View transcribe.py</summary>
+<div id="gist-transcribe"></div>
+<script>
+  document.currentScript.closest('details').addEventListener('toggle', function () {
+    if (this.open && !this.querySelector('script[data-gist]')) {
+      var s = document.createElement('script');
+      s.src = 'https://gist.github.com/nneubacher/892e1805f283b244dd416c5114fd5d73.js';
+      s.setAttribute('data-gist', '1');
+      document.getElementById('gist-transcribe').appendChild(s);
+    }
+  });
+</script>
+</details>
 
 ## Get Started
-
-Dependencies are `sounddevice`, `mlx`, and `mlx-audio` — all installable via pip.
 
 * [IBM Granite Speech 4.1 on Hugging Face](https://huggingface.co/ibm-granite/granite-speech-4.1-2b)
 * [mlx-audio on GitHub](https://github.com/Blaizzy/mlx-audio)
