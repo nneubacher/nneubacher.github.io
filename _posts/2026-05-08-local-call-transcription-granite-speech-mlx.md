@@ -8,7 +8,7 @@ guid: 'nikolasneubacher.com/nn-1'
 permalink: /article/local-call-transcription-granite-speech-mlx/
 custom_permalink:
     - article/local-call-transcription-granite-speech-mlx/
-image:
+image: /assets/img/2026/05/asr-speech.png
 pin: false
 ---
 
@@ -17,6 +17,22 @@ pin: false
 Teams, Zoom, and Meet all have built-in transcription, but they send your audio to a cloud service. For calls involving customers, internal strategy, or anything sensitive, that is not always acceptable. The alternative is to run the speech model locally so nothing leaves the machine.
 
 With IBM Granite Speech 4.1 and Apple's MLX framework this is surprisingly practical — fast, private, and the output drops straight into your favorite text editor, in my case Obsidian.
+
+# Granite Speech 4.1
+
+![Accuracy-Speed Tradeoff on the Open ASR Leaderboard (Apr 2026)](/assets/img/2026/05/asr-speech.png)
+
+Granite Speech 4.1 2B is IBM's compact speech-language model for multilingual ASR and speech translation across English, French, German, Spanish, Portuguese, and Japanese. It was trained on 174,000 hours of audio from public corpora and sits on the Pareto frontier of the Open ASR Leaderboard — meaning it achieves among the best word error rates for its inference speed class.
+
+A few things make it stand out from the usual Whisper variants:
+
+* **Dual-head CTC encoder** — graphemic and BPE outputs combined with frame importance sampling, which focuses computation on the informative parts of the audio and improves multilingual accuracy
+* **Punctuation and truecasing** — including German noun capitalisation, enabled via a simple prompt change rather than post-processing
+* **Keyword biasing** — better recognition of names, acronyms, and technical jargon out of the box
+
+Two additional variants are worth knowing about: `granite-speech-4.1-2b-plus` adds speaker-attributed ASR and word-level timestamps, and `granite-speech-4.1-2b-nar` introduces a non-autoregressive architecture for higher throughput (visible on the chart above, trading a small accuracy loss for roughly 4× the speed).
+
+For this project the standard 2B variant is the right choice — it sits cleanly on the Pareto frontier at an RTFx of around 200, uses 4.3 GB of memory, and handles the mixed German/English audio in my tests without any configuration.
 
 ## The Stack
 
