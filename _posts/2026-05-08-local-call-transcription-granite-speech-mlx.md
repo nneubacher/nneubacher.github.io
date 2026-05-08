@@ -1,6 +1,6 @@
 ---
 id: nn-1
-title: "Local Call Transcription with IBM Granite Speech and MLX on Apple Silicon"
+title: "Local Call Transcription with IBM Granite Speech 4.1 via MLX on Apple Silicon"
 date: 2026-05-08 01:01:00 +0100
 author: 'Nikolas Neubacher'
 layout: post
@@ -20,10 +20,7 @@ tags:
   - macos
   - local-ai
   - transcription
-image:
-  path: /assets/img/2026/05/asr-speech.png
-  alt: IBM Granite Speech 4.1 running on Apple Silicon with MLX
-pin: false
+pin: true
 ---
 
 *IBM Granite Speech 4.1 running locally via MLX can transcribe both sides of a call in real time — microphone and system audio — without sending anything to the cloud. This post shows how to set it up on Apple Silicon.*
