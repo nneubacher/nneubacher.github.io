@@ -121,6 +121,37 @@ model: ibm-granite/granite-speech-4.1-2b
 *Recording ended at 14:16:13 — 00:01:22, 11 utterances, 141 words*
 ```
 
+```
+---
+title: Call — 2026-05-08 18:17
+date: 2026-05-08
+time: 18:17
+participants:
+  - System Audio (BlackHole 2ch)
+model: ibm-granite/granite-speech-4.1-2b
+---
+
+# Call — 2026-05-08 18:17
+
+**[18:17:55] System Audio:** so we
+
+**[18:18:10] System Audio:** so what we're doing there, eric, is we're not trying to say how many mrs does someone send if they send something. we're saying how many mrs from external do we get for the size of our organization.
+
+**[18:18:27] System Audio:** sorry i have a childhood emergency outside the door
+
+**[18:18:45] System Audio:** so maybe explain the context behind this the context is as we grow as a company we should make sure we keep the community up like the logical thing is for the community to flatline and the size of the org to go and before you know it you've kind of outgrown the wider community
+
+**[18:19:17] System Audio:** yeah, and what i'm seeing is we created this pretty sophisticated taxonomy with prefixes and postfixes to talk about these things, but in reality we've only got two of them, and we keep forgetting and we have a hard time discussing this thing, so i'd rather just name them simply, two names for what they are, rather than using that taxonomy. but also, like, in f, i have this proposal of like, what if we just tracked as a kpi the percentage of total mrs that come from the community over time, and we would see that drop.
+
+**[18:19:34] System Audio:** i love that i love that let's do that instead okay but the thing the thing why we have this complex thing is because you can game that you want to game that you just produce fewer mrs with the engineers at gitlab
+
+
+---
+*Recording ended at 18:19:43 — 00:01:52, 7 utterances, 245 words*
+```
+
+The second example uses `--system` only, capturing a single audio source — a [GitLab engineering meeting on YouTube](https://www.youtube.com/watch?v=qGFoZ8yodc4). The script works equally well with just a mic, just system audio, or both simultaneously.
+
 Because Obsidian live-reloads open files, you can leave the transcript open during the call and watch it update as the conversation progresses. Pointing `-o` to your vault folder is all the integration needed.
 
 ## Performance
