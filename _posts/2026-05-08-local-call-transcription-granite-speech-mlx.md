@@ -120,22 +120,48 @@ A few honest caveats: the VAD is energy-based, so a noisy environment will produ
 
 ## The Script
 
+One thing worth calling out: the script includes a monkey-patch for a bug in the current mlx-audio release. The Granite Speech model's weight loader doesn't correctly transpose the convolutional layer tensors when converting from PyTorch layout, which causes silent shape mismatches at inference time. The fix patches the `sanitize` method at import. I've submitted a [pull request to the mlx-audio repo](https://github.com/Blaizzy/mlx-audio/pull/715) — once merged the workaround can be removed.
+
 <a href="https://gist.github.com/nneubacher/892e1805f283b244dd416c5114fd5d73/raw/transcribe.py" download="transcribe.py">⬇ Download transcribe.py</a>
 
-<details>
+<details id="gist-details">
 <summary>View transcribe.py</summary>
-<div id="gist-transcribe"></div>
+<pre style="overflow:auto;max-height:520px;border-radius:6px;font-size:0.8em;margin-top:0.5em;"><code id="gist-code" class="language-python">Loading…</code></pre>
+</details>
 <script>
-  document.currentScript.closest('details').addEventListener('toggle', function () {
-    if (this.open && !this.querySelector('script[data-gist]')) {
-      var s = document.createElement('script');
-      s.src = 'https://gist.github.com/nneubacher/892e1805f283b244dd416c5114fd5d73.js';
-      s.setAttribute('data-gist', '1');
-      document.getElementById('gist-transcribe').appendChild(s);
+  document.getElementById('gist-details').addEventListener('toggle', function () {
+    if (!this.open) return;
+    var code = document.getElementById('gist-code');
+    if (code.dataset.loaded) return;
+    code.dataset.loaded = '1';
+
+    function applyHighlight() {
+      if (window.hljs) { hljs.highlightElement(code); }
     }
+
+    function loadHljs(cb) {
+      if (window.hljs) { cb(); return; }
+      if (!document.getElementById('hljs-css')) {
+        var link = document.createElement('link');
+        link.id = 'hljs-css';
+        link.rel = 'stylesheet';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css';
+        document.head.appendChild(link);
+      }
+      var s = document.createElement('script');
+      s.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js';
+      s.onload = cb;
+      document.head.appendChild(s);
+    }
+
+    fetch('https://gist.github.com/nneubacher/892e1805f283b244dd416c5114fd5d73/raw/transcribe.py')
+      .then(function (r) { return r.text(); })
+      .then(function (t) {
+        code.textContent = t;
+        loadHljs(applyHighlight);
+      });
   });
 </script>
-</details>
 
 ## Get Started
 
