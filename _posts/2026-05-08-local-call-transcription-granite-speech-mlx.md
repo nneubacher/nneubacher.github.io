@@ -8,7 +8,21 @@ guid: 'nikolasneubacher.com/nn-1'
 permalink: /article/local-call-transcription-granite-speech-mlx/
 custom_permalink:
     - article/local-call-transcription-granite-speech-mlx/
+description: "How to run private real-time call transcription locally on Apple Silicon using IBM Granite Speech 4.1 and MLX, including macOS audio routing and performance tuning."
+categories:
+  - AI
+  - Speech
+  - Apple Silicon
+tags:
+  - granite-speech
+  - mlx
+  - asr
+  - macos
+  - local-ai
+  - transcription
 image:
+  path: /assets/img/2026/05/asr-speech.png
+  alt: IBM Granite Speech 4.1 running on Apple Silicon with MLX
 pin: false
 ---
 

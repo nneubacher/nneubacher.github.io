@@ -24,21 +24,18 @@ timezone: Europe/Berlin
 # ↓ --------------------------
 title: Nikolas Neubacher
 
-tagline: "<div>Welcome to my blog!</div><div style='padding-bottom: 10px;'></div><div>...</div>"
+tagline: "Welcome to my Blog!"
 
 description: >-   
-  Blog from Nikolas Neubacher, coming soon...
+  coming soon...
 
 github:
   username: nneubacher
-twitter:
-  username: ...
 social:
   name: Nikolas Neubacher
   links:
     # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/...
-    - https://twitter.com/...      
+    - https://nikolasneubacher.com
     - https://github.com/nneubacher      
 
 google_site_verification:               # fill in to your verification string
